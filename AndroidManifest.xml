@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ramation.foldingcell.examples.myapplication">
+    package="com.ramation.foldingcell.examples.celstream">
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <provider
+            android:name="com.ramation.foldingcell.examples.celstream.AssetProvider"
+            android:authorities="com.ramation.foldingcell.examples.celstream"
+            android:grantUriPermissions="true"
+            android:exported="true" />
+    </application>
 </manifest>
